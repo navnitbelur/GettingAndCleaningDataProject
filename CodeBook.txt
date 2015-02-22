@@ -1,0 +1,106 @@
+Code Book
+
+February 22, 2015
+
+The data table contains 180 observations of 81 variables
+
+1. Subject 
+
+Variable = Subject
+Variable type = numeric
+Range: 1 - 30 (mapping to subjects using for test and trials)
+
+2. Activity
+
+variable = activity
+type = String
+Values: one of 6 possible values:
+	a. LAYING
+	b. SITTING
+	c. STANDING
+	d. WALKING
+	e. WALKING DOWNSTAIRS
+	f. WALKING UPSTAIRS
+	
+
+3 - 81: Average values of sensor data collected for each of the mean() and std() readings. The mapping is below: 
+
+		"avg(tBodyAcc_mean___X)" = mean(tBodyAcc-mean()-X),
+                "avg(tBodyAcc_mean___Y)" = mean(tBodyAcc_mean___Y),
+                "avg(tBodyAcc_mean___Z)" = mean(tBodyAcc_mean___Z),
+                "avg(tBodyAcc_std___X)" = mean(tBodyAcc_std___X),
+                "avg(tBodyAcc_std___Y)" = mean(tBodyAcc_std___Y),
+                "avg(tBodyAcc_std___Z)" = mean(tBodyAcc_std___Z),
+                "avg(tGravityAcc_mean___X)" = mean(tGravityAcc_mean___X),
+                "avg(tGravityAcc_mean___Y)" = mean(tGravityAcc_mean___Y),
+                "avg(tGravityAcc_mean___Z)" = mean(tGravityAcc_mean___Z),
+                "avg(tGravityAcc_std___X)" = mean(tGravityAcc_std___X),
+                "avg(tGravityAcc_std___Y)" = mean(tGravityAcc_std___Y),
+                "avg(tGravityAcc_std___Z)" = mean(tGravityAcc_std___Z),
+                "avg(tBodyAccJerk_mean___X)" = mean(tBodyAccJerk_mean___X),
+                "avg(tBodyAccJerk_mean___Y)" = mean(tBodyAccJerk_mean___Y),
+                "avg(tBodyAccJerk_mean___Z)" = mean(tBodyAccJerk_mean___Z),
+                "avg(tBodyAccJerk_std___X)" = mean(tBodyAccJerk_std___X),
+                "avg(tBodyAccJerk_std___Y)" = mean(tBodyAccJerk_std___Y),
+                "avg(tBodyAccJerk_std___Z)" = mean(tBodyAccJerk_std___Z),
+                "avg(tBodyGyro_mean___X)" = mean(tBodyGyro_mean___X),
+                "avg(tBodyGyro_mean___Y)" = mean(tBodyGyro_mean___Y),
+                "avg(tBodyGyro_mean___Z)" = mean(tBodyGyro_mean___Z),
+                "avg(tBodyGyro_std___X)" = mean(tBodyGyro_std___X),
+                "avg(tBodyGyro_std___Y)" = mean(tBodyGyro_std___Y),
+                "avg(tBodyGyro_std___Z)" = mean(tBodyGyro_std___Z),
+                "avg(tBodyGyroJerk_mean___X)" = mean(tBodyGyroJerk_mean___X),
+                "avg(tBodyGyroJerk_mean___Y)" = mean(tBodyGyroJerk_mean___Y),
+                "avg(tBodyGyroJerk_mean___Z)" = mean(tBodyGyroJerk_mean___Z), 
+                "avg(tBodyGyroJerk_std___X)" = mean(tBodyGyroJerk_std___X),
+                "avg(tBodyGyroJerk_std___Y)" = mean(tBodyGyroJerk_std___Y),
+                "avg(tBodyGyroJerk_std___Z)" = mean(tBodyGyroJerk_std___Z),
+                "avg(tBodyAccMag_mean__)" = mean(tBodyAccMag_mean__),
+                "avg(tBodyAccMag_std__)" = mean(tBodyAccMag_std__),
+                "avg(tGravityAccMag_mean__)" = mean(tGravityAccMag_mean__),
+                "avg(tGravityAccMag_std__)" = mean(tGravityAccMag_std__),
+                "avg(tBodyAccJerkMag_mean__)" = mean(tBodyAccJerkMag_mean__),
+                "avg(tBodyAccJerkMag_std__)" = mean(tBodyAccJerkMag_std__),
+                "avg(tBodyGyroMag_mean__)" = mean(tBodyGyroMag_mean__),
+                "avg(tBodyGyroMag_std__)" = mean(tBodyGyroMag_std__),
+                "avg(tBodyGyroJerkMag_mean__)" = mean(tBodyGyroJerkMag_mean__),
+                "avg(tBodyGyroJerkMag_std__)" = mean(tBodyGyroJerkMag_std__),
+                "avg(fBodyAcc_mean___X)" = mean(fBodyAcc_mean___X),
+                "avg(fBodyAcc_mean___Y)" = mean(fBodyAcc_mean___Y),
+                "avg(fBodyAcc_mean___Z)" = mean(fBodyAcc_mean___Z),
+                "avg(fBodyAcc_std___X)" = mean(fBodyAcc_std___X),
+                "avg(fBodyAcc_std___Y)" = mean(fBodyAcc_std___Y),
+                "avg(fBodyAcc_std___Z)" = mean(fBodyAcc_std___Z),
+                "avg(fBodyAcc_meanFreq___X)" = mean(fBodyAcc_meanFreq___X),
+                "avg(fBodyAcc_meanFreq___Y)" = mean(fBodyAcc_meanFreq___Y),
+                "avg(fBodyAcc_meanFreq___Z)" = mean(fBodyAcc_meanFreq___Z),
+                "avg(fBodyAccJerk_mean___X)" = mean(fBodyAccJerk_mean___X),
+                "avg(fBodyAccJerk_mean___Y)" = mean(fBodyAccJerk_mean___Y),
+                "avg(fBodyAccJerk_mean___Z)" = mean(fBodyAccJerk_mean___Z),
+                "avg(fBodyAccJerk_std___X)" = mean(fBodyAccJerk_std___X),
+                "avg(fBodyAccJerk_std___Y)" = mean(fBodyAccJerk_std___Y),
+                "avg(fBodyAccJerk_std___Z)" = mean(fBodyAccJerk_std___Z),
+                "avg(fBodyAccJerk_meanFreq___X)" = mean(fBodyAccJerk_meanFreq___X),
+                "avg(fBodyAccJerk_meanFreq___Y)" = mean(fBodyAccJerk_meanFreq___Y),
+                "avg(fBodyAccJerk_meanFreq___Z)" = mean(fBodyAccJerk_meanFreq___Z),
+                "avg(fBodyGyro_mean___X)" = mean(fBodyGyro_mean___X),
+                "avg(fBodyGyro_mean___Y)" = mean(fBodyGyro_mean___Y),
+                "avg(fBodyGyro_mean___Z)" = mean(fBodyGyro_mean___Z),
+                "avg(fBodyGyro_std___X)" = mean(fBodyGyro_std___X),
+                "avg(fBodyGyro_std___Y)" = mean(fBodyGyro_std___Y),
+                "avg(fBodyGyro_std___Z)" = mean(fBodyGyro_std___Z),
+                "avg(fBodyGyro_meanFreq___X)" = mean(fBodyGyro_meanFreq___X),
+                "avg(fBodyGyro_meanFreq___Y)" = mean(fBodyGyro_meanFreq___Y),
+                "avg(fBodyGyro_meanFreq___Z)" = mean(fBodyGyro_meanFreq___Z),
+                "avg(fBodyAccMag_mean__)" = mean(fBodyAccMag_mean__),
+                "avg(fBodyAccMag_std__)" = mean(fBodyAccMag_std__),
+                "avg(fBodyAccMag_meanFreq__)" = mean(fBodyAccMag_meanFreq__),
+                "avg(fBodyBodyAccJerkMag_mean__)" = mean(fBodyBodyAccJerkMag_mean__),
+                "avg(fBodyBodyAccJerkMag_std__)" = mean(fBodyBodyAccJerkMag_std__),
+                "avg(fBodyBodyAccJerkMag_meanFreq__)" = mean(fBodyBodyAccJerkMag_meanFreq__),
+                "avg(fBodyBodyGyroMag_mean__)" = mean(fBodyBodyGyroMag_mean__),
+                "avg(fBodyBodyGyroMag_std__)" = mean(fBodyBodyGyroMag_std__),
+                "avg(fBodyBodyGyroMag_meanFreq__)" = mean(fBodyBodyGyroMag_meanFreq__),
+                "avg(fBodyBodyGyroJerkMag_mean__)" = mean(fBodyBodyGyroJerkMag_mean__),
+                "avg(fBodyBodyGyroJerkMag_std__)" = mean(fBodyBodyGyroJerkMag_std__),
+                "avg(fBodyBodyGyroJerkMag_meanFreq__)" = mean(fBodyBodyGyroJerkMag_meanFreq__)
